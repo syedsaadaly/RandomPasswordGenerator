@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pwd Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PASSWORD GENERATOR</h1>
+        <div class="form-group">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" min="4" max="50" value="12">
+        </div>
+        <div class="form-group">
+            <label for="uppercase">Include Uppercase Letters:</label>
+            <input type="checkbox" id="uppercase">
+        </div>
+        <div class="form-group">
+            <label for="numbers">Include Numbers:</label>
+            <input type="checkbox" id="numbers">
+        </div>
+        <div class="form-group">
+            <label for="symbols">Include Symbols:</label>
+            <input type="checkbox" id="symbols">
+        </div>
+        <button id="generate">Generate Password</button>
+        <div class="password" id="password"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
